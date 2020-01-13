@@ -1,0 +1,99 @@
+"","Id","ViewCount","Body.x","Title","Answer"
+"1",9219,749562,"<p>I started mining on a friend's computer and it shows 300 kH/s. But when I research other peoples' hash rates I usually see MH/s. Are these speeds the same as kilobytes and megabytes?</p>
+
+<p>Also, when I say 300 kH/s does that mean 300,000 Hashes generated per second? </p>
+","What is the difference between kH/s, MH/s, and GH/s?","<p>Sure:</p>
+
+<ul>
+<li>1 kH/s is 1,000 hashes per second (sometimes mistakenly written KH/s).</li>
+<li>1 MH/s is 1,000,000 hashes per second.</li>
+<li>1 GH/s is 1,000,000,000 hashes per second.</li>
+<li>1 TH/s is 1,000,000,000,000 hashes per second.</li>
+<li>1 PH/s is 1,000,000,000,000,000 hashes per second.</li>
+</ul>
+"
+"2",2844,357072,"<p>Can you eventually hold the bitcoins in your hand, like real cash dollars or euros or something? If so, how?</p>
+
+<p>I've gone through all the service previews and introduction videos (actually, a video), and didn't see anything about this particular point.</p>
+
+<p>I don't have a credit card, and I'm in a country where banking services aren't so profound and  people don't use credit cards (Libya). Does a Bitcoin account rely on having a credit card, and will the coins you gather be added to your bank account?</p>
+","How can I change BTC into normal cash?","<p>Bitcoins are a purely electronic currency. If you want to sell them in exchange for dollars or euros, you can do that. But as Bitcoins, they exist purely electronically. There are <a href=""https://www.casascius.com/"" rel=""noreferrer"">physical Bitcoins</a> but basically, they're just the key to an electronic account printed in some form.</p>
+
+<p>I think you're missing the concept that Bitcoins act like a currency or commodity. You can have 10 Bitcoins just like you can have 10 ounces of gold. The key difference is that the Bitcoins exist electronically rather than phyiscally. If you have Bitcoins and want dollars, you have to find someone who has dollars and wants Bitcoins, then you exchange with them.</p>
+
+<p>Bitcoins are not a payment or fund transfer system for national currencies like PayPal and Western Union are. Bitrcoins are a currency that has an efficient built-in transfer system.</p>
+"
+"3",118,317984,"<p>Say I have a given piece of hardware (CPU/GPU). Where can I find out how much Bitcoin will I mine per day?</p>
+","How much Bitcoin will I mine right now with hardware X?","<p>Go to <a href=""http://bitminter.com/test"">http://bitminter.com/test</a> and click the ""test start"" button. If you have Java installed the miner should launch. Click ""engine start"" on your GPU(s) to start mining and the GUI will show how many bitcoins per day you will make (on average).</p>
+
+<p>Note that you are actively mining in a pool without getting paid. This test page launches a version of the miner which is only meant to be used for a short time for testing.</p>
+
+<p><strong>Update for 2015</strong>: CPU and GPU mining are both long dead. When you buy ASIC mining hardware you will know its hashrate before you buy. Don't buy if you don't. Google ""bitcoin mining calculator"", input your hashrate, and it will tell you how much you can earn right now, on average. Note that the difficulty will change in the future so your earnings will not stay the same. Also note that with most pools actual earnings vary with luck. Finally, avoid the typical newbie mistake of confusing TH/s and GH/s. 1 TH/s = 1000 GH/s.</p>
+"
+"4",9046,291923,"<p>I sent a transaction</p>
+
+<ul>
+<li>without (or with an exceptionally small) transaction fee</li>
+<li>using extremely small or unconfirmed inputs</li>
+<li>while the stars were not standing right.</li>
+</ul>
+
+<p>For whatever reason, I have been waiting forever for my transaction to confirm. </p>
+
+<p>Why is it taking so long for my transaction to confirm? What can I do to speed-up the transaction’s confirmation?</p>
+
+<hr>
+
+<p><em>This is a canonical question serving as a lightning rod for the flood of ""unconfirmed transaction"" questions we are experiencing lately. Please provide a detailed and broad answer to serve a wide range of these questions.</em></p>
+","Why is my transaction not getting confirmed and what can I do about it?","<p><strong>How Bitcoin Mining Works</strong></p>
+
+<p>Bitcoin transactions are mined (processed) by Miners, and Miners want to benefit from their work. By mining transactions with higher fees, they make more money. Some miners can decide to mine all transactions no matter the fee but they still must compete with every other financially motivated miner.</p>
+
+<p><strong>Why is it taking so long for my transaction to confirm?</strong></p>
+
+<p>If you have sent a transaction</p>
+
+<blockquote>
+  <p>without (or with an exceptionally small) transaction fee</p>
+</blockquote>
+
+<p>expect it to be ignored for an unknown amount of time until a miner decides to process it <em>and</em> solves the block; this could be several days to several weeks, possibly never. Your wallet and any Bitcoin node will show it as unconfirmed, your transaction is stuck in limbo.</p>
+
+<p>Block sizes are limited, which means that only a limited number of transactions can be processed in a certain timeframe. In the beginning of bitcoin, there was lots of free space in each block because there were not many transactions. However, now that Bitcoin is quite popular there are more transactions than can be processed into the current block. This is why transaction fees have increased, and as long as someone is still willing to pay more they will keep increasing.</p>
+
+<p><strong>What can I do to speed-up the transaction’s confirmation?</strong></p>
+
+<p>Nothing. The next best thing is to cancel and resend the transaction.</p>
+
+<ol>
+<li>Make a note of the individual bitcoin address(es) that the unconfirmed transaction was sent from.</li>
+<li>Run Bitcoin Core with the <code>-zapwallettxes</code> option (or wait a few days until your wallet stops broadcasting the transaction and it falls out of the global transaction mempool). (Issue with mempool.dat resolved by #10330 in <a href=""https://bitcoin.org/en/release/v0.15.0"" rel=""noreferrer"">0.15.0</a>).</li>
+<li>Send <strong>all</strong> your bitcoins from the addresses recorded in step 1 to a new address <strong>with the recommended or higher than recommended fee</strong>.</li>
+<li>Make original transaction again using the recommended fee.</li>
+</ol>
+
+<p><strong>What to watch out for</strong></p>
+
+<ul>
+<li>Sites that claim to ""speed up your unconfirmed bitcoin transaction"". From personal experience, these sites are either scams or just don't work.</li>
+<li>DOUBLE PAYMENTS. If the addresses used in the original transaction have sufficient bitcoin in them to cover the transaction, it can always be completed at a later date. To avoid this, follow step 3 to empty the associated addresses and do not reuse them.</li>
+</ul>
+
+<p><strong>What is the recommended fee?</strong></p>
+
+<p>Transaction fees vary by the size of your transaction, and not all transactions are the same size. The fee for same sized transactions also depends on how busy the bitcoin network is at the moment.
+An estimate (at the time of original post) was between 11-20 satoshi/byte (0.00011-0.00020BTC/kB) but now can be much higher.
+Most wallets have a feature which dynamically calculates the rate based on network congestion.</p>
+
+<p>See <a href=""https://bitcoinfees.earn.com/"" rel=""noreferrer"">https://bitcoinfees.earn.com/</a> for a live chart of suggested transaction fees</p>
+"
+"5",17239,255820,"<p>A friend of mine gave me two bitcoins which I now want to sell. I don't understand the process which would enable me send the funds generated to my bank account.</p>
+","How can I sell bitcoins and transfer the funds to my bank account?","<p>Although you can find a more comprehensive list <a href=""https://en.bitcoin.it/wiki/Exchanges"" rel=""noreferrer"">here</a> on the Bitcoin Wiki, some of the most popular exchanges in the community are:</p>
+
+<ul>
+<li><strong>Coinbase</strong> - <a href=""https://coinbase.com"" rel=""noreferrer"">https://coinbase.com</a></li>
+<li><strong>Bitstamp</strong> - <a href=""https://www.bitstamp.net"" rel=""noreferrer"">https://www.bitstamp.net</a></li>
+</ul>
+
+<p>You can exchange your bitcoins for US dollars on these websites and have them funded to your bank account.</p>
+"

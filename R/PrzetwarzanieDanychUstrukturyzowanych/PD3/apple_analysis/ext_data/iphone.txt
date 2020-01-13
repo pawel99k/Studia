@@ -1,0 +1,11 @@
+"2010-06","iphone 4",
+"2011-10","iphone 4s",
+"2012-09","iphone 5",
+"2013-09","iphone 5s 5c"
+"2014-09","iphone 6 6Plus",
+"2015-09","iphone 6s, 6sPlus",
+"2016-03","iphone SE",
+"2016-09","iphone 7 7Plus",
+"2017-09","iphone 8, 8Plus",
+"2017-11","iphone X",
+"2018-09","iphone Xr Xs XsMax"
