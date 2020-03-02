@@ -1,0 +1,12 @@
+name: SpotiData
+title: SpotiData
+username:
+account: pawel99k
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1724731
+bundleId: 2761919
+url: https://pawel99k.shinyapps.io/SpotiData/
+when: 1580324683.48836
+asMultiple: FALSE
+asStatic: FALSE
