@@ -1,0 +1,10 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+}
