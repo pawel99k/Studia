@@ -17,4 +17,4 @@ https://youtu.be/Rb1RhxYTWL4
 
 # Warsztaty Badawcze
 ## Artykuł - badanie reprodukowalności artykułów naukowych
-https://mini-pw.github.io/2020L-WB-Book/how-to-measure-reproducibility-classification-of-problems-with-reproducing-scientific-papers.html)[https://mini-pw.github.io/2020L-WB-Book/how-to-measure-reproducibility-classification-of-problems-with-reproducing-scientific-papers.html
+https://mini-pw.github.io/2020L-WB-Book/how-to-measure-reproducibility-classification-of-problems-with-reproducing-scientific-papers.html
