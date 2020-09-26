@@ -1,20 +1,20 @@
-# Prezentacje - krótkie filmiki prezentujące narzędzia mojego autorstwa.
+# Videos - short clips presenting tools of mine
 
-# Techniki Wizualizacji Danych
-## Projekt - aplikacja interaktywna
+# Data Visualisation Techniques
+## Project - interactive application in R Shiny
 
 https://youtu.be/Bk9K89AA3qQ
 
-# Podstawy Matematyki Stosowanej - Wstęp do Równań Różniczkowych
-## Projekt - interaktywna aplikacja wizualizująca modele potencjalnej inwazji zombie na wypadek różnych zachowań ludzkości
+# Basics of applied mathematics, introduction to differential equations
+## Project - interactive application visualising models of zombie invasion in Dash Plotly
 
 https://youtu.be/R5G3YcxikQo
 
-# Zaawansowane Programowanie Obiektowe i Funkcyjne
-## Projekt - aplikacja centrum meczowe prezentująca przedmeczowe statystyki oraz predykcje dotyczące wyników spotkań w 5 najlepszych ligach świata
+# Advanced Object and Functioncal Programming
+## Project - match centre application presenting pre-match statistics with built-in predictive model in top 5 football leagues
 
 https://youtu.be/Rb1RhxYTWL4
 
-# Warsztaty Badawcze
-## Artykuł - badanie reprodukowalności artykułów naukowych
+# Case Studies
+## Article - research about scientic papers reproducibility (English)
 https://mini-pw.github.io/2020L-WB-Book/how-to-measure-reproducibility-classification-of-problems-with-reproducing-scientific-papers.html
